@@ -4,10 +4,16 @@
 */
 USE codeup_test_db;
 
+DROP TABLE IF EXISTS quote;
+DROP TABLE IF EXISTS airlines;
+
 CREATE TABLE quote (
+  id int unsigned not null AUTO_INCREMENT PRIMARY KEY,
   author_first_name VARCHAR(50),
   author_last_name VARCHAR(100) NOT NULL,
-  content TEXT NOT NULL
+  content TEXT NOT NULL,
+  created_at DATETIME,
+  updated_at DATETIME
 );
 
 CREATE TABLE airlines(
