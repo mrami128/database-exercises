@@ -13,13 +13,13 @@ USE employees;
 
 -- another way to do this is with OR
 
-# SELECT first_name
-# FROM employees
-# WHERE (first_name = 'irena'
-# or first_name = 'vidya'
-# or first_name = 'maya')
-# and gender =('M');
-#
+SELECT first_name
+FROM employees
+WHERE (first_name = 'irena'
+or first_name = 'vidya'
+or first_name = 'maya')
+and gender ='M';
+
 -- /---------------------
 
 # SELECT first_name, last_name, birth_date
@@ -27,9 +27,9 @@ USE employees;
 # WHERE hire_date LIKE ('199%')
 # AND birth_date LIKE ('%12-05');
 
-SELECT first_name, last_name
-FROM employees
-WHERE hire_date LIKE ('199%');
+# SELECT first_name, last_name
+# FROM employees
+# WHERE hire_date LIKE ('199%');
 
 # SELECT first_name, last_name
 # FROM employees
@@ -41,8 +41,14 @@ WHERE hire_date LIKE ('199%');
 
 SELECT *
 FROM employees
-WHERE last_name LIKE ('%q%')
-and last_name NOT LIKE ('%qu%');
+WHERE last_name LIKE '%q%'
+and last_name NOT LIKE '%qu%'
+ORDER BY birth_date asc;;
 
+SELECT *
+FROM employees
+WHERE last_name LIKE '%q%'
+      and last_name NOT LIKE '%qu%'
+ORDER BY birth_date desc;
 
 
