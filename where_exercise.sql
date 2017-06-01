@@ -15,9 +15,11 @@ USE employees;
 
 SELECT first_name
 FROM employees
-WHERE first_name = 'irena'
+WHERE (first_name = 'irena'
 or first_name = 'vidya'
-or first_name = 'maya';
+or first_name = 'maya')
+and gender =('M');
+
 -- /---------------------
 
 SELECT first_name, last_name
