@@ -22,10 +22,10 @@ USE employees;
 #
 -- /---------------------
 
-SELECT first_name, last_name
+SELECT first_name, last_name, birth_date
 FROM employees
-WHERE last_name LIKE ('e%')
-OR last_name like('%e');
+WHERE hire_date LIKE ('199%')
+AND birth_date LIKE ('%12-05');
 
 SELECT first_name, last_name
 FROM employees
