@@ -13,18 +13,19 @@ USE employees;
 
 -- another way to do this is with OR
 
-SELECT first_name
-FROM employees
-WHERE (first_name = 'irena'
-or first_name = 'vidya'
-or first_name = 'maya')
-and gender =('M');
-
+# SELECT first_name
+# FROM employees
+# WHERE (first_name = 'irena'
+# or first_name = 'vidya'
+# or first_name = 'maya')
+# and gender =('M');
+#
 -- /---------------------
 
 SELECT first_name, last_name
 FROM employees
-WHERE last_name LIKE ('e%');
+WHERE last_name LIKE ('e%')
+OR last_name like('%e');
 
 SELECT first_name, last_name
 FROM employees
