@@ -6,7 +6,7 @@ USE codeup_test_db;
 
 DROP TABLE IF EXISTS quote;
 DROP TABLE IF EXISTS airlines;
-drop table if exists people;
+DROP table if exists people;
 drop table if exists test;
 drop table if exists albums;
 
@@ -26,21 +26,13 @@ CREATE TABLE airlines(
   description TEXT
 );
 
-Create table people(
+CREATE table people(
   id int unsigned not null AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255) not null,
   age DECIMAL(4,1) not NULL
 );
-create table test(
+CREATE table test(
   id int unsigned not null AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255) not null
 );
 
-CREATE TABLE albums (
-  id           INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  artist       VARCHAR(255)  NOT NULL,
-  name         VARCHAR(255)  NOT NULL,
-  release_date INT,
-  sales        FLOAT,
-  genre        VARCHAR(255)  NOT NULL
-);

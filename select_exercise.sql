@@ -1,14 +1,19 @@
 USE  codeup_test_db;
 
 
-SELECT 'Albums by Pink Floyd' AS 'Info';
+# ------
 
-SELECT * FROM albums WHERE artist = 'Pink Floyd';
+  SELECT 'Albums by Pink Floyd' AS 'Info';
 
-SELECT id, artist, name as 'album title' FROM albums WHERE artist = 'Pink Floyd';
+  SELECT * FROM albums WHERE artist = 'Pink Floyd';
 
 # --------
- SELECT 'The year Sgt. Pepper''s released ' as'';
+
+  SELECT id, artist, name as 'album title' FROM albums WHERE artist = 'Pink Floyd';
+
+# --------
+
+  SELECT 'The year Sgt. Pepper''s released ' as'';
 
  select release_date from albums where name = 'Sgt. Pepper''s lonely Hearts Club Band';
 
