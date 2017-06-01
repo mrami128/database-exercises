@@ -1,5 +1,8 @@
 use codeup_test_db;
 
+-- delete from albums;   -- doesnt reset id counter  #76+++
+ TRUNCATE albums; -- does reset counter to id #1
+
 INSERT INTO albums
 (artist, name, release_date, genre, sales)
 VALUES
