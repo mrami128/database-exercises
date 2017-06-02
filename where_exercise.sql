@@ -51,4 +51,8 @@ WHERE last_name LIKE '%q%'
       and last_name NOT LIKE '%qu%'
 ORDER BY birth_date desc;
 
+SELECT first_name, last_name
+FROM employees
+ORDER BY last_name DESC, first_name ASC;
+
 
